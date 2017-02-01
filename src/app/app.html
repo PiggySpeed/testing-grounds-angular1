@@ -1,6 +1,18 @@
 <main>
   <h1 class="title">Hello from Angular !</h1>
 </main>
-<footer>
+<input>
   <a ng-href="{{app.bear}}">Webpack Angular Starter</a>
+  <div ng-controller="AppCtrl">
+    <p>{{tree}}</p>
+    <br/>
+    <input ng-model="calculateAnimals.bunnies" ng-model-options="{ getterSetter: true }"/>
+    <br/>
+    <span ng-bind="calculateAnimals.bunnies()"></span>
+  </div>
+
+  <div ng-controller="JungleController">
+    <h1>Section 2</h1>
+
+  </div>
 </footer>
